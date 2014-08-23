@@ -1,0 +1,114 @@
+light-blue = #77bef9
+mid-blue = #00a9f0
+dark-blue = #003580
+green = #64b108
+
+* {
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  font-family: Helvetica Neue;
+}
+
+.container {
+  width: 818px;
+  min-height: 800px;
+}
+
+core-header-panel {
+  width: 100%;
+  min-height: 800px;
+  margin: 5px;
+}
+
+core-toolbar {
+  background-color: light-blue;
+}
+
+.date-input {
+  width: 250px;
+  padding: 7px;
+  background-color: white;
+}
+
+.content {
+  padding-top: 15px;
+}
+
+.room {
+  display: inline-block;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin-left: 5px;
+}
+
+.room__title {
+  color: dark-blue;
+  font-size: 20px;
+}
+.room__pic {
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  &::after {
+    content: attr(data-price);
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    padding: 10px;
+
+    color: white;
+    background-color: rgba(dark-blue, .8);
+  }
+}
+
+.room__filter {
+  position: relative;
+  top: -3px;
+  height: 44px;
+
+  text-align: center;
+  color: white;
+  background-color: mid-blue;
+}
+
+.room__details {
+  background-color: #f2f4f8;
+  padding: 20px;
+}
+
+paper-tabs {
+  background-color: white;
+}
+
+.room__count-input {
+  width: 150px;
+  margin
+}
+
+.room__book-button {
+  float: right;
+  margin-top: 10px;
+
+  background-color: dark-blue;
+  color: white;
+  font-weight: bold;
+}
+
+.room__notice {
+  position: relative;
+  width: 100%;
+  padding: 3px;
+
+  color: white;
+  text-align: center;
+  background-color: green;
+  border-radius: 4px;
+  font-weight: 200;
+}

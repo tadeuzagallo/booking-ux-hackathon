@@ -1,4 +1,4 @@
 /** @jsx React.DOM */
 
-React.renderComponent(<RoomsTable />,
-                      document.querySelector('.rooms-table'));
+/*React.renderComponent(<RoomsTable />,*/
+                      /*document.querySelector('.container'));*/
