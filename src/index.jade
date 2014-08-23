@@ -20,7 +20,7 @@ html
           input.date-input(placeholder='Checkin' type='date')
           | to
           input.date-input(placeholder='Checkin' type='date')
-          paper-button(label='More filters')
+          paper-button.more-filters(label='More filters')
 
         .content
           .room
@@ -47,13 +47,74 @@ html
                 .room__notice With free cancelation on most rooms
 
               .room__facilities
-                .room__facility(icon='images/wifi.png') Free Wifi
-                .room__facility(icon='images/wifi.png') Free Wifi
-                .room__facility(icon='images/wifi.png') Free Wifi
-                .room__facility(icon='images/wifi.png') Free Wifi
-                .room__facility(icon='images/wifi.png') Free Wifi
+                .room__facility
+                  img(src='images/wifi.jpg')
+                  | Free Wifi
+                .room__facility
+                  img(src='images/wifi.jpg')
+                  | Free Wifi
+                .room__facility
+                  img(src='images/wifi.jpg')
+                  | Free Wifi
+                .room__facility
+                  img(src='images/wifi.jpg')
+                  | Free Wifi
+                .room__facility
+                  img(src='images/wifi.jpg')
+                  | Free Wifi
+
               .room__optionals
-                h3.room__optionals-title
+                h5.room__optionals-title Optionals
+
+                .room__facility
+                  img(src='images/wifi.jpg')
+                  | Free Wifi
+          .room
+            h2.room__title Executive Queen Room with access to Executive Lounge
+
+            .room__pic(data-price='US$ 50')
+              img(src='images/room.jpg')
+
+            .room__filter
+              | US$ 50.00
+              paper-slider(min='50' max'250' pin='true')
+              | US$ 250.00
+
+            paper-tabs.blue(selected='0' role='tablist')
+              paper-tab 1
+              paper-tab 2
+              paper-tab 3
+              paper-tab.plus-tab +
+
+            .room__details
+              .room__book
+                paper-input.room__count-input(floatinglabel='' label='ROOMS' type='number' error='Input is not a number!')
+                paper-button.room__book-button(label='Book it!')
+                .room__notice With free cancelation on most rooms
+
+              .room__facilities
+                .room__facility
+                  img(src='images/wifi.jpg')
+                  | Free Wifi
+                .room__facility
+                  img(src='images/wifi.jpg')
+                  | Free Wifi
+                .room__facility
+                  img(src='images/wifi.jpg')
+                  | Free Wifi
+                .room__facility
+                  img(src='images/wifi.jpg')
+                  | Free Wifi
+                .room__facility
+                  img(src='images/wifi.jpg')
+                  | Free Wifi
+
+              .room__optionals
+                h5.room__optionals-title Optionals
+
+                .room__facility
+                  img(src='images/wifi.jpg')
+                  | Free Wifi
 
     script(src='../components/react/react.js')
     script(src='../components/react/JSXTransformer.js')
